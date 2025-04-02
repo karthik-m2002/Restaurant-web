@@ -1,8 +1,8 @@
 FROM nginx:latest
 
 WORKDIR /var/www/html
-
-COPY . .
+RUN apt install vim -y
+COPY . /var/www/html
 
 EXPOSE 80
 
